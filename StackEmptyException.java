@@ -1,0 +1,19 @@
+class StackEmptyException extends RuntimeException
+{
+	String msg;
+
+	public StackEmptyException()
+	{
+		msg = "StackEmptyException";
+	}
+	
+	public StackEmptyException (String m)
+	{
+		msg = m;
+	}
+
+	public String toString()
+	{
+		return "StackEmptyException: " + msg;
+	}
+}
